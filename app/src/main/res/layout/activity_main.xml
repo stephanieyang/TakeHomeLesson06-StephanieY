@@ -5,18 +5,50 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.android.takehomelesson06_stephaniey.MainActivity">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
-        <TextView
-            android:layout_width="wrap_content"
+
+        <EditText
+            android:id="@+id/amt_main"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Hello World!"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:layout_marginTop="8dp"
+            android:freezesText="true"
+            android:hint="@string/hint_amt"
+            android:inputType="number"
+            android:textSize="16dp" />
+
+        <EditText
+            android:id="@+id/amt_tax"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:freezesText="true"
+            android:hint="@string/hint_tax"
+            android:inputType="number"
+            android:textSize="16dp" />
+
+        <EditText
+            android:id="@+id/amt_tip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:freezesText="true"
+            android:hint="@string/hint_tip"
+            android:inputType="number"
+            android:textSize="16dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/btn_submit"
+            android:textAllCaps="true" />
     </LinearLayout>
 
 

@@ -30,7 +30,7 @@ public class PaymentActivity extends AppCompatActivity {
 
     private void displayPaymentInfo(float amt, float tax, float tip, float total) {
 
-        NumberFormat dollarFmt = NumberFormat.getInstance();
+        NumberFormat dollarFmt = NumberFormat.getCurrencyInstance();
         dollarFmt.setMinimumFractionDigits(2);
         dollarFmt.setMaximumFractionDigits(2);
         NumberFormat percentFmt = NumberFormat.getInstance();
